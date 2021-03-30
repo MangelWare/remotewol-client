@@ -1,4 +1,4 @@
-# Remote WOL: Client Part
+# Remote WOL: Client
 
 Client implementation of a simple Remote WOL (Wake-on-LAN) setup based on an ESP8266.
 The polling mechanism consists of two HTTP GET requests with a custom HMAC-based challenge-response authentication.
