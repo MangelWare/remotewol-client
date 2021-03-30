@@ -13,4 +13,7 @@ See [here](https://github.com/MangelWare/remotewol-server) for a server implemen
 
 ### Deployment
 
-To deploy the client firmware, replace the placeholder secrets in `remotewol/secrets.h`. The firmware can be flashed to your ESP8266 via the Arduino IDE. Note that the implementation uses the deep sleep feature of the ESP8266, so the respective GPIO pin has to be connected to RST for this to work (tutorials w.r.t. specific boards can be found online).
+To deploy the client firmware, replace the placeholder secrets in `remotewol/secrets.h`. 
+Furthermore, replace the polling URL in `remotewol/remotewol.ino`.
+You can also configure the polling rate here (see `POLLING_RATE_SEC`).
+The firmware can be flashed to your ESP8266 via the Arduino IDE. Note that the implementation uses the deep sleep feature of the ESP8266, so the respective GPIO pin has to be connected to RST for this to work (tutorials w.r.t. specific boards can be found online).
