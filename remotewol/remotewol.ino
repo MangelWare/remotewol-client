@@ -164,7 +164,8 @@ void loop() {
             String server_response = http.getString();
             if (strcmp(wakeup_msg, server_response.c_str())==0) {
               Serial.println("Wakeup call received! Sending magic packet...");
-              WakeOnLan::sendWOL(computer_ip, UDP, (byte *)mac_addr, sizeof mac_addr);
+              WakeOnLan::sendWOL(computer_ip, UDP, (byte *)mac, sizeof mac);
+              delay(200);
             }
           }
         } else {
